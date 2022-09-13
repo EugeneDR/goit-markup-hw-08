@@ -66,6 +66,7 @@
         pointer-events: none;
     }
 }
+
 .mob-menu-wrap {
     display: flex;
     flex-direction: column;
@@ -137,7 +138,7 @@
 
 .mob-media {
     display: flex;
-    flex-direction: wrap;
+    flex-wrap: wrap;
 
     .mob-media__item {
     display: flex;
