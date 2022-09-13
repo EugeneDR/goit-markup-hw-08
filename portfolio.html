@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="mob-header">
+          <a href="" class="logo header__logo link"><span class="logo--accent">Web</span>Studio</a>
+          <button type="button" class="mob-menu__btn is-open" data-menu-open >
+            <svg width="40" height="40" aria-label="перемикач мобільного меню">
+              <use class="icon-menu" href="./images/symbol-defs.svg#icon-open-menu"></use>
+            </svg>
+          </button>
+          <div class="mob-menu-container" data-menu>
+            <button type="button" class="mob-close-menu" data-menu-close>
+              <svg width="40" height="40">
+                <use class="icon-cross" href="./images/symbol-defs.svg#icon-close-menu"></use>
+              </svg>
+            </button> 
+            <div class="mob-menu-wrap">
+              <div class="mob-nav-wrap"> 
+              <ul class="mob-nav list">
+              <li class="mob-nav__item"><a href="./index.html" class="mob-nav__link link">Студія</a></li>
+              <li class="mob-nav__item"><a href="" class="mob-nav__link link current">Портфоліо</a></li>
+              <li class="mob-nav__item"><a href="" class="mob-nav__link link">Контакти</a></li>
+              </ul>
+              </div>
+           
+              <div class="flex-contacts-wrap">
+              <ul class="mob-contacts list">
+              <li class="mob-contacts__item"><a href="tel:+380961111111" class="mob-contacts__tel link"
+                >+38 096 111 11 11</a
+              ></li>
+              <li class="mob-contacts__item"><a href="mailto:info@devstudio.com" class="mob-contacts__mail link">
+                info@devstudio.com</a></li>
+            </ul>
+            <ul class="mob-media list">
+              <li class="mob-media__item"><a class="mob-media__link link" href="">Instagram</a></li>
+              <li class="mob-media__item"><a class="mob-media__link link" href="">Twitter</a></li>
+              <li class="mob-media__item"><a class="mob-media__link link" href="">Facebook</a></li>
+              <li class="mob-media__item"><a class="mob-media__link link" href="">LinkedIn</a></li>
+            </ul>
+            </div>
+          </div>
+          </div>
+        </div>
+         <nav class="navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a href="" class="logo header__logo link"><span class="logo--accent">Web</span>Studio</a>
+            </li>
+            <li class="navigation__item">
+              <a href="./index.html" class="navigation__link link">Студія</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link link current"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts__list list">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link link"
+              ><svg class="contacts__icon" width="16" height="12">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link link"
+              ><svg class="contacts__icon" width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div> 
+    </header>
+    <main>
+      <section class="filters">
+        <div class="container filters__container">
+          <h1 class="filters__title visually-hidden">Our projects</h1>
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <button class="site-nav__btn" type="button">Все</button>
+            </li>
+            <li class="site-nav__item">
+              <button class="site-nav__btn" type="button">Веб-сайти</button>
+            </li>
+            <li class="site-nav__item">
+              <button class="site-nav__btn" type="button">Додатки</button>
+            </li>
+            <li class="site-nav__item">
+              <button class="site-nav__btn" type="button">Дизайн</button>
+            </li>
+            <li class="site-nav__item">
+              <button class="site-nav__btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="product-cards list">
+            <li class="product-cards__item">
+              <a class="product-cards__link link" href="">
+                <div class="product-cards__image-wrap">
+                  <picture>
+                    <source srcset="./images/technokriak.jpg 1x, ./images/technokriak-2x.jpg 2x" media="(min-width: 1200px)"/>
+                    <source srcset="./images/technokriak-tablet.jpg 1x, ./images/technokriak-tablet-2x.jpg 2x" media="(min-width: 768px)"/>
+                    <source srcset="./images/technokriak-mobile.jpg 1x, ./images/technokriak-mobile-2x.jpg 2x" media="(max-width: 767px)"/>
+                    <img
+                    class="product-cards__image"
+                    src="./images/technokriak-mobile.jpg"
+                    alt="веб-сайт"
+                    width="450"
+                    height="294"
+                  />
+                  </picture>
+                 
+                  <div class="product-cards__overlay">
+                    <p class="product-cards__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="product-cards__description">
+                  <h2 class="product-cards__title">Технокряк</h2>
+                  <p class="product-cards__type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="product-cards__item">
+              <a class="product-cards__link link" href="">
+                <div class="product-cards__image-wrap">
+                  <picture>
+                    <source srcset="./images/new-orlean.jpg 1x, ./images/new-orlean-2x.jpg 2x" media="(min-width: 1200px)"/>
+                    <source srcset="./images/new-orlean-tablet.jpg 1x, ./images/new-orlean-tablet-2x.jpg 2x" media="(min-width: 768px)"/>
+                    <source srcset="./images/new-orlean-mobile.jpg 1x, ./images/new-orlean-mobile-2x.jpg 2x" media="(max-width: 767px)"/>
+                    <img
+                    class="product-cards__image"
+                    src="./images/new-orlean-mobile.jpg"
+                    alt="баскетбол постер"
+                    width="450"
+                    height="294"
+                  />
+                  </picture>
+                  
+                  <div class="product-cards__overlay">
+                    <p class="product-cards__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Nemo, eum.
+                    </p>
+                  </div>
+                </div>
+                <div class="product-cards__description">
+                  <h2 lang="en" class="product-cards__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="product-cards__type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-cards__item">
+              <a class="product-cards__link link" href="">
+                <div class="product-cards__image-wrap">
+                  <picture>
+                    <source srcset="./images/seafood.jpg 1x, ./images/seafood-2x.jpg 2x" media="(min-width: 1200px)"/>
+                    <source srcset="./images/seafood-tablet.jpg 1x, ./images/seafood-tablet-2x.jpg 2x" media="(min-width: 768px)"/>
+                    <source srcset="./images/seafood-mobile.jpg 1x, ./images/seafood-mobile-2x.jpg 2x" media="(max-width: 767px)"/>
+                    <img
+                    class="product-cards__image"
+                    src="./images/seafood-mobile.jpg"
+                    alt="емблема ресторану морепродуктів"
+                    width="450"
+                    height="294"
+                  />
+                  </picture>
+                  
+                  <div class="product-cards__overlay">
+                    <p class="product-cards__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Nemo, eum.
+                    </p>
+                  </div>
+                </div>
+                <div class="product-cards__description">
+                  <h2 class="product-cards__title">Ресторан Seafood</h2>
+                  <p class="product-cards__type">Додаток</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-cards__item">
+              <a class="product-cards__link link" href="">
+                <div class="product-cards__image-wrap">
+                  <picture>
+                    <source srcset="./images/prime.jpg 1x, ./images/prime-2x.jpg 2x" media="(min-width: 1200px)"/>
+                    <source srcset="./images/prime-tablet.jpg 1x, ./images/prime-tablet-2x.jpg 2x" media="(min-width: 768px)"/>
+                    <source srcset="./images/prime-mobile.jpg 1x, ./images/prime-mobile-2x.jpg 2x" media="(max-width: 767px)"/>
+                    <img
+                    class="product-cards__image"
+                    src="./images/prime-mobile.jpg"
+                    alt="навушники"
+                    width="450"
+                    height="294"
+                    />
+                  </picture>
+                  
+                  <div class="product-cards__overlay">
+                    <p class="product-cards__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Nemo, eum.
+                    </p>
+                  </div>
+                </div>
+                <div class="product-cards__description">
+                  <h2 lang="en" class="product-cards__title">Проєкт Prime</h2>
+                  <p class="product-cards__type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-cards__item">
+              <a class="product-cards__link link" href="">
+                <div class="product-cards__image-wrap">
+                  <picture>
+                    <source srcset="./images/boxes.jpg 1x, ./images/boxes-2x.jpg 2x" media="(min-width: 1200px)"/>
+                    <source srcset="./images/boxes-tablet.jpg 1x, ./images/boxes-tablet-2x.jpg 2x" media="(min-width: 768px)"/>
+                    <source srcset="./images/boxes-mobile.jpg 1x, ./images/boxes-mobile-2x.jpg 2x" media="(max-width: 767px)"/>
+                    <img
+                    class="product-cards__image"
+                    src="./images/boxes-mobile.jpg"
+                    alt="коробки"
+                    width="450"
+                    height="294"
+                  />
+                  </picture>
+                  
+                  <div class="product-cards__overlay">
+                    <p class="product-cards__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Nemo, eum.
+                    </p>
+                  </div>
+                </div>
+                <div class="product-cards__description">
+                  <h2 lang="en" class="product-cards__title">Проєкт Boxes</h2>
+                  <p class="product-cards__type">Додаток</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-cards__item">
+              <a class="product-cards__link link" href="">
+                <div class="product-cards__image-wrap">
+                  <picture>
+                    <source srcset="./images/inspiration.jpg 1x, ./images/inspiration-2x.jpg 2x" media="(min-width: 1200px)"/>
+                    <source srcset="./images/inspiration-tablet.jpg 1x, ./images/inspiration-tablet-2x.jpg 2x" media="(min-width: 768px)"/>
+                    <source srcset="./images/inspiration-mobile.jpg 1x, ./images/inspiration-mobile-2x.jpg 2x" media="(max-width: 767px)"/>
+                    <img
+                    class="product-cards__image"
+                    src="./images/inspiration.jpg"
+                    alt="екран комп'ютера"
+                    width="450"
+                    height="294"
+                  />
+                  </picture>
+                  
+                  <div class="product-cards__overlay">
+                    <p class="product-cards__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Nemo, eum.
+                    </p>
+                  </div>
+                </div>
+                <div class="product-cards__description">
+                  <h2 lang="en" class="product-cards__title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="product-cards__type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-cards__item">
+              <a class="product-cards__link link" href="">
+                <div class="product-cards__image-wrap">
+                  <picture>
+                    <source srcset="./images/limited-edition.jpg 1x, ./images/limited-edition-2x.jpg 2x" media="(min-width: 1200px)"/>
+                    <source srcset="./images/limited-edition-tablet.jpg 1x, ./images/limited-edition-tablet-2x.jpg 2x" media="(min-width: 768px)"/>
+                    <source srcset="./images/limited-edition-mobile.jpg 1x, ./images/limited-edition-mobile-2x.jpg 2x" media="(max-width: 767px)"/>
+                    <img
+                    class="product-cards__image"
+                    src="./images/limited-edition-mobile.jpg"
+                    alt="відкритий журнал"
+                    width="450"
+                    height="294"
+                  />
+                  </picture>
+                  
+                  <div class="product-cards__overlay">
+                    <p class="product-cards__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Nemo, eum.
+                    </p>
+                  </div>
+                </div>
+                <div class="product-cards__description">
+                  <h2 lang="en" class="product-cards__title">
+                    Видання Limited Edition
+                  </h2>
+                  <p class="product-cards__type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-cards__item">
+              <a class="product-cards__link link" href="">
+                <div class="product-cards__image-wrap">
+                  <picture>
+                    <source srcset="./images/lab.jpg 1x, ./images/lab-2x.jpg 2x" media="(min-width: 1200px)"/>
+                    <source srcset="./images/lab-tablet.jpg 1x, ./images/lab-tablet-2x.jpg 2x" media="(min-width: 768px)"/>
+                    <source srcset="./images/lab-mobile.jpg 1x, ./images/lab-mobile-2x.jpg 2x" media="(max-width: 767px)"/>
+                    <img
+                    class="product-cards__image"
+                    src="./images/lab-mobile.jpg"
+                    alt="етикетка"
+                    width="450"
+                    height="294"
+                  />
+                  </picture>
+                  
+                  <div class="product-cards__overlay">
+                    <p class="product-cards__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Nemo, eum.
+                    </p>
+                  </div>
+                </div>
+                <div class="product-cards__description">
+                  <h2 class="product-cards__title">Проект LAB</h2>
+                  <p class="product-cards__type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-cards__item">
+              <a class="product-cards__link link" href="">
+                <div class="product-cards__image-wrap">
+                  <picture>
+                    <source srcset="./images/growing-bussines.jpg 1x, ./images/growing-bussines-2x.jpg 2x" media="(min-width: 1200px)"/>
+                    <source srcset="./images/growing-bussines-tablet.jpg 1x, ./images/growing-bussines-tablet-2x.jpg 2x" media="(min-width: 768px)"/>
+                    <source srcset="./images/growing-bussines-mobile.jpg 1x, ./images/growing-bussines-mobile-2x.jpg 2x" media="(max-width: 767px)"/>
+                    <img
+                    class="product-cards__image"
+                    src="./images/growing-bussines-mobile.jpg"
+                    alt="ноутбук"
+                    width="450"
+                    height="294"
+                  />
+                  </picture>
+                  
+                  <div class="product-cards__overlay">
+                    <p class="product-cards__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Nemo, eum.
+                    </p>
+                  </div>
+                </div>
+                <div class="product-cards__description">
+                  <h2 lang="en" class="product-cards__title">
+                    Growing Business
+                  </h2>
+                  <p class="product-cards__type">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="address-wrap">
+          <a href="" class="logo footer__logo link"
+            ><span class="logo--accent">Web</span>Studio</a
+          >
+          <address class="address">
+            <ul class="address__list list">
+              <li class="address__item">
+                <a
+                  href="https://goo.gl/maps/ePNzgXtJ5XjrzMhz8"
+                  class="address__link link"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__contacts link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__contacts link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-contacts">
+          <p class="footer-contacts__title">приєднуйтесь</p>
+          <ul class="soc-media list">
+            <li class="soc-media__item">
+              <a href="" class="soc-media__link link">
+                <svg class="soc-media__icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-media__item">
+              <a href="" class="soc-media__link link">
+                <svg class="soc-media__icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-media__item">
+              <a href="" class="soc-media__link link">
+                <svg class="soc-media__icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-media__item">
+              <a href="" class="soc-media__link link">
+                <svg class="soc-media__icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe-form">
+          <b class="subscribe-form__title">підпишіться на розсилку</b>
+          <div class="subscribe-form__content">
+            <label class="subscribe-form__label">
+              <input
+                class="subscribe-form__input"
+                type="email"
+                name="user-email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="button subscribe-form__btn" type="submit">
+              <span class="subscribe-form__text">Підписатися</span>
+              <svg class="subscribe-form__icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

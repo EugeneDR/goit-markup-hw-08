@@ -1,0 +1,105 @@
+
+.footer__logo {
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 0;
+    color: $contrastColor;
+}
+.footer__container {
+display: flex;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 60px;
+        text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
+        align-items: baseline;
+        justify-content: left;
+        text-align: left;
+        gap: 0;
+    }
+}
+
+.address-wrap {
+    @media screen and (min-width: 1200px) {
+       margin-right: 70px; 
+    }
+    
+}
+.address__link {
+    color: $contrastColor;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    }
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+.address__contacts {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.footer-contacts {
+    @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    }
+    
+
+    &__title {
+    color: $contrastColor;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
+    }
+}
+
+.soc-media {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    background-color:rgba(255, 255, 255, 0.1);
+    color: $contrastColor;
+    border: 4px rgba(0, 0, 0, 0.25);
+    
+        &:hover, &:focus {
+        background-color: $accentColor;
+        }
+    }
+
+    &__icon {
+    fill: currentColor;
+    }
+}
+
+
+

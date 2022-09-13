@@ -1,0 +1,212 @@
+.backdrop {
+    position: fixed; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    }
+    &.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.8);
+    }
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    padding: 40px;
+
+    width: 100%;
+    height: auto;
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 609px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        min-height: 581px;
+    }
+    
+    border-radius: 4px;
+
+    background-color: $contrastColor;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &__title {
+        margin-bottom: 12px;
+
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: $mainTitleColor;
+        @media screen and (min-width: 1200px) {
+            font-size: 20px;
+            line-height: 1.15;  
+          }
+    }
+    &__label {
+        display: block;
+        margin-bottom: 10px;
+        
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+
+        color: $mainColor;
+    }
+    &__text {
+        display: block;
+        margin-bottom: 4px;
+        }
+    &__input {
+        height: 40px;
+        width: 100%;
+        padding-left: 43px;
+
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &:focus {
+            outline: 1px solid $accentColor;
+        }  
+    }
+    &__icons {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(50%, 50%);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+        
+        .modal__input:focus + & {
+            fill: $accentColor;
+        }
+    }
+    &__comment {
+    height: 120px;
+    width: 100%;
+    resize: none;
+    padding: 12px 16px;
+   
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:focus {
+        outline: 1px solid $accentColor;
+        }
+    }
+}
+
+
+.input-wrap {
+    position:relative;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+}
+
+.label__comment {
+    margin-bottom: 20px;
+}
+
+.agreement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    &__text {
+        font-size: 12px;
+        line-height: 1.17;
+        @media screen and (min-width: 1200px) {
+          font-size: 14px;
+          line-height: 1.71;  
+        }
+        letter-spacing: 0.03em;
+
+        color: $mainColor;
+    }
+    &__link {
+        border-bottom: 1px solid $accentColor;
+        color: $accentColor;
+    }
+    
+}
+
+.checkbox__field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7px;
+
+    width: 16px;
+    height: 15px;
+    border: 2px solid $mainTitleColor;
+    border-radius: 3px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .agreement__input:checked + & {
+        background-color: $accentColor;
+        border-color: $accentColor;
+    }
+        
+    .agreement__input:focus + & {
+        border-color: $accentColor;
+    }
+}
+
+.checkbox__icon {
+    fill: transparent;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    .agreement__input:checked + .checkbox__field &{
+        fill: $contrastColor;
+    }
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $contrastColor;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));  
+}
+.button--send-form {
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 10px 52px;
+    min-width: 200px;
+    margin: 0 auto;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
